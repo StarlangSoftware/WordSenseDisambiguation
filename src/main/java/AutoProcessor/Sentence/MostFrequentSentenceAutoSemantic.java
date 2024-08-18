@@ -30,6 +30,7 @@ public class MostFrequentSentenceAutoSemantic extends SentenceAutoSemantic {
      * 3. the current word
      * and sets the most frequent sense for that multiword expression or word.
      * @param sentence The sentence for which word sense will be determined automatically.
+     * @return True, if at least one word is semantically annotated, false otherwise.
      */
     @Override
     public boolean autoLabelSingleSemantics(AnnotatedSentence sentence) {
