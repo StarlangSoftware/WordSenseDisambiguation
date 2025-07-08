@@ -164,7 +164,7 @@ public class SentenceSemanticFrame extends SentenceAnnotatorFrame {
         JOptionPane.showMessageDialog(this, "WordNet, dictionary, and annotated corpus are loaded!", "Semantic Annotation", JOptionPane.INFORMATION_MESSAGE);
     }
 
-    protected SentenceAnnotatorPanel generatePanel(String currentPath, String rawFileName) {
+    public SentenceAnnotatorPanel generatePanel(String currentPath, String rawFileName) {
         return new SentenceSemanticPanel(currentPath, rawFileName, fsm, wordNet, exampleSentences);
     }
 
